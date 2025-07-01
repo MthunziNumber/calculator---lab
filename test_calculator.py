@@ -1,5 +1,5 @@
 import unittest
-
+from calculator import add, subtract, multiply, divide
 
 class TestCalculator(unittest.TestCase):
   def test_add_zero(self):
@@ -29,7 +29,7 @@ class TestCalculator(unittest.TestCase):
     
   def test_add(self):
     self.assertEqual(add(2, 3), 5)
-    self.asserEqual(add(-3, -2), -5)
+    self.assertEqual(add(-300, -200), -500)
     self.assertEqual(add(-5, 2), -3)
 
   def test_subtract(self):
